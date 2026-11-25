@@ -22,6 +22,11 @@ Saves and autosave live in the browser storage of that home-screen app, on that 
 
 ## Room scenes
 Each room is drawn as a small 3D scene above the text, generated on the phone from the room's
-name, its description and the objects the game reports in it (WebGL2, no images or models).
+name, its description and the objects the game reports in it (three.js, no images or models):
+stylised two-band lighting with a sunlit rim, physical sky, sun/lantern shadows, N8AO ambient
+occlusion, bloom, instanced wind-blown grass, swaying trees and drifting dust.
+Quality steps down automatically if the phone can't keep up.
 Turn them off under Menu → Hide room scenes. They hide themselves while the keyboard is open.
-Technique adapted from github.com/Noniv/atlantis (MIT, © 2026 Maksymilian Dendura).
+Credits: three.js (MIT), N8AO by N8python (CC0), grass technique after spacejack/terra (MIT shader
+code) and al-ro, toon approach after ciro-unity/BotW-ToonShader, generator patterns from
+Noniv/atlantis (MIT, © 2026 Maksymilian Dendura).
